@@ -1,5 +1,4 @@
-.input,
-.output {
+.input {
     padding: 60px 0;
     &__container {
         background-color: rgb(248, 248, 248);
@@ -42,30 +41,33 @@
 }
 
 .input__option {
-    background-color: $bg-color;
-    color: $text-color;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    &--disabled {
+        background-color: rgb(229, 229, 229);   
+    }
 }
 
 .input__subject {
     margin-bottom: 20px;
     width: 250px;
     height: 30px;
-    background-color: $bg-color;
-    border: 1px $orange-color solid; 
+    background-color: var(--bg-color);
+    border: 1px var(--orange-color) solid; 
     border-radius: 5px;
     padding: 0 10px;
 }
 .rating {
     width: 250px;
     height: 30px;
-    background-color: $bg-color;
-    border: 1px $orange-color solid; 
+    background-color: var(--bg-color);
+    border: 1px var(--orange-color) solid; 
     border-radius: 5px;
     padding: 0 10px;
     &:hover,
     &:focus,
     &:active {
-        border: 1px $orange-color solid; 
+        border: 1px var(--orange-color) solid; 
     }
 }
 .input__buttons {
@@ -77,8 +79,8 @@
 .input__button {
     display: block;
     cursor: pointer;
-    background-color: $bg-color;
-    border: 1px $orange-color solid;
+    background-color: var(--bg-color);
+    border: 1px var(--orange-color) solid;
     width: 170px;
     height: 40px;
     border-radius: 5px;

@@ -17,66 +17,113 @@
                     <label class="input__label">
                         <span class="input__span">Предмет №1</span>
                         <li class="input__item">
-                            <select name="" id="" class="input__subject">
-                                <option class="input__option" value="" selected>Математика</option>
-                                <option class="input__option" value="">Англійська мова</option>
-                                <option class="input__option" value="">Українська мова</option>
-                                <option class="input__option" value="">Історія</option>
+                            <select name="" id="" class="input__subject" data-action="first-select" required>
+                                <option class="input__option input__option--choose" value="chose" disabled selected hidden>Вибрати</option>
+                                <option class="input__option" value="math" >Математика</option>
+                                <option class="input__option" value="eng">Англійська мова</option>
+                                <option class="input__option" value="ua">Українська мова</option>
+                                <option class="input__option" value="history">Історія</option>
+                                <option class="input__option input__option--disabled" value="geo" disabled>Географія</option>
+                                <option class="input__option input__option--disabled" value="bio" disabled>Біологія</option>
                             </select>
-                            <input type="text" class="rating" placeholder="Введіть оцінку">
+                            <input type="text" class="rating" placeholder="Введіть оцінку" data-action="first-input" required>
                         </li>
                     </label>
                     <label class="input__label">
                         <span class="input__span">Предмет №2</span>
                         <li class="input__item">
-                            <select name="" id="" class="input__subject">
-                                <option class="input__option" value="">Математика</option>
-                                <option class="input__option" value="" selected>Англійська мова</option>
-                                <option class="input__option" value="">Українська мова</option>
-                                <option class="input__option" value="">Історія</option>
+                            <select name="" id="" class="input__subject" data-action="second-select" required>
+                                <option class="input__option input__option--choose" value="chose" disabled selected hidden>Вибрати</option>
+                                <option class="input__option" value="math">Математика</option>
+                                <option class="input__option" value="eng">Англійська мова</option>
+                                <option class="input__option" value="ua">Українська мова</option>
+                                <option class="input__option" value="history">Історія</option>
+                                <option class="input__option input__option--disabled" value="geo" disabled>Географія</option>
+                                <option class="input__option input__option--disabled" value="bio" disabled>Біологія</option>
                             </select>
-                            <input type="text" class="rating" placeholder="Введіть оцінку">
+                            <input type="text" class="rating" placeholder="Введіть оцінку" data-action="second-input" required>
                         </li>
                     </label>
                     <label class="input__label">
                         <span class="input__span">Предмет №3</span>
                         <li class="input__item">
-                            <select name="" id="" class="input__subject">
-                                <option class="input__option" value="">Математика</option>
-                                <option class="input__option" value="">Англійська мова</option>
-                                <option class="input__option" value="" selected>Українська мова</option>
-                                <option class="input__option" value="">Історія</option>
+                            <select name="" id="" class="input__subject" data-action="third-select">
+                                <option class="input__option input__option--choose" value="chose" disabled selected hidden>Вибрати</option>
+                                <option class="input__option" value="math">Математика</option>
+                                <option class="input__option" value="eng">Англійська мова</option>
+                                <option class="input__option" value="ua">Українська мова</option>
+                                <option class="input__option" value="history">Історія</option>
+                                <option class="input__option input__option--disabled" value="geo" disabled>Географія</option>
+                                <option class="input__option input__option--disabled" value="bio" disabled>Біологія</option>
                             </select>
-                            <input type="text" class="rating" placeholder="Введіть оцінку">
+                            <input type="text" class="rating" placeholder="Введіть оцінку" data-action="third-input">
                         </li>
                     </label>
                     <label class="input__label">
                         <span class="input__span">Предмет №4</span>
                         <li class="input__item">
-                            <select name="" id="" class="input__subject">
-                                <option class="input__option" value="">Математика</option>
-                                <option class="input__option" value="">Англійська мова</option>
-                                <option class="input__option" value="">Українська мова</option>
-                                <option class="input__option" value="" selected>Історія</option>
+                            <select name="" id="" class="input__subject" data-action="fourth-select">
+                                <option class="input__option input__option--choose" value="chose" disabled selected hidden>Вибрати</option>
+                                <option class="input__option" value="math">Математика</option>
+                                <option class="input__option" value="eng">Англійська мова</option>
+                                <option class="input__option" value="ua">Українська мова</option>
+                                <option class="input__option" value="history">Історія</option>
+                                <option class="input__option input__option--disabled" value="geo" disabled>Географія</option>
+                                <option class="input__option input__option--disabled" value="bio" disabled>Біологія</option>
                             </select>
-                            <input type="text" class="rating" placeholder="Введіть оцінку">
+                            <input type="text" class="rating" placeholder="Введіть оцінку" data-action="fourth-input">
                         </li>
                     </label>
                 </ul>
                 <div class="input__buttons">
-                    <button type="submit" class="input__button">Отримати статистику</button>
-                    <button type="reset" class="input__button">Скинути</button>
+                    <button type="submit" class="input__button" data-action="start">Отримати статистику</button>
+                    <button type="reset" class="input__button" data-action="reset">Скинути</button>
                 </div>
             </form>
             </div>
         </section>
         <section class="output">
-            <div class="container output__container"></div>
+            <div class="container output__container">
+                <ul class="output__list">
+                    <li class="output__item">
+                        <p class="output__paragraph">Твій середній бал ЗНО:</p>
+                        <span class="output__span" data-action="output-first">-</span>
+                    </li>
+                    <li class="output__item">
+                        <p class="output__paragraph">Ти кращий за такий відсоток вступників:</p>
+                        <span class="output__span" data-action="output-second">-</span>
+                    </li>
+                    <li class="output__item">
+                        <p class="output__paragraph">Ймовірність вступу:</p>
+                        <span class="output__span" data-action="output-third">-</span>
+                    </li>
+                    <li class="output__item">
+                        <p class="output__paragraph">Ймовірність вступу на бюджет:</p>
+                        <span class="output__span" data-action="output-fourth">-</span>
+                    </li>
+                    <li class="output__item">
+                        <p class="output__paragraph">Ти кращий за такий відсоток вступників з першого предмету:</p>
+                        <span class="output__span" data-action="output-fifth">-</span>
+                    </li>
+                    <li class="output__item">
+                        <p class="output__paragraph">Ти кращий за такий відсоток вступників з другого предмету:</p>
+                        <span class="output__span" data-action="output-sixth">-</span>
+                    </li>
+                    <li class="output__item">
+                        <p class="output__paragraph">Ти кращий за такий відсоток вступників з третього предмету:</p>
+                        <span class="output__span" data-action="output-seventh">-</span>
+                    </li>
+                    <li class="output__item">
+                        <p class="output__paragraph">Ти кращий за такий відсоток вступників з четвертого предмету:</p>
+                        <span class="output__span" data-action="output-eighth">-</span>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer"></footer>
 
 
-    <script src="/index.js" type="module"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

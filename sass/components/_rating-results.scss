@@ -1,0 +1,28 @@
+.output__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.output__item {
+    display: block;
+    width: 250px;
+    padding: 30px;
+    border-radius: 5px;
+        box-shadow: 2px 22px 58px -14px rgba(0,0,0,0.25);
+        -webkit-box-shadow: 2px 22px 58px -14px rgba(0,0,0,0.25);
+        -moz-box-shadow: 2px 22px 58px -14px rgba(0,0,0,0.25);
+}
+
+.output__paragraph {
+    margin-bottom: 20px;
+}
+
+.output__span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--orange-color);
+}
