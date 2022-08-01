@@ -1,0 +1,90 @@
+.input,
+.output {
+    padding: 60px 0;
+    &__container {
+        background-color: rgb(248, 248, 248);
+        border-radius: 5px;
+        box-shadow: 2px 22px 58px -14px rgba(0,0,0,0.25);
+        -webkit-box-shadow: 2px 22px 58px -14px rgba(0,0,0,0.25);
+        -moz-box-shadow: 2px 22px 58px -14px rgba(0,0,0,0.25);
+        padding: 40px 0;
+    }
+}
+
+.input__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.input__form {
+    padding: 0 40px;
+}
+
+.input__list {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.input__item {
+    width: 250px;
+    
+}
+.input__label {
+    color: rgb(150, 150, 150);
+    font-size: 14px;
+}
+
+.input__span {
+    display: block;
+    padding-left: 14px;
+    padding-bottom: 6px;
+}
+
+.input__option {
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+.input__subject {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 30px;
+    background-color: $bg-color;
+    border: 1px $orange-color solid; 
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.rating {
+    width: 250px;
+    height: 30px;
+    background-color: $bg-color;
+    border: 1px $orange-color solid; 
+    border-radius: 5px;
+    padding: 0 10px;
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px $orange-color solid; 
+    }
+}
+.input__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.input__button {
+    display: block;
+    cursor: pointer;
+    background-color: $bg-color;
+    border: 1px $orange-color solid;
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    transition: .3s;
+    &:hover,
+    &:focus {
+        background-color: rgba(242, 153, 0, .1);
+    }
+}
